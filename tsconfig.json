@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                   // Utilisation des fonctionnalités ECMAScript modernes
+    "module": "ESNext",                   // Utilisation des modules ECMAScript (ESM)
+    "moduleResolution": "Node",           // Résolution des modules dans le style Node.js
+    "declaration": true,                  // Génération des fichiers .d.ts (déclarations TypeScript)
+    "outDir": "./out",                   // Dossier de sortie des fichiers compilés
+    "rootDir": "./src",                   // Dossier racine du code source
+    "esModuleInterop": true,              // Interopérabilité avec les modules CommonJS/ESModules
+    "skipLibCheck": true,                 // Évite les vérifications des types des fichiers de bibliothèque (accélère la compilation)
+    "strict": true,                       // Active toutes les vérifications TypeScript strictes
+    "lib": ["DOM", "ES2020"],             // Support des API Web et des fonctionnalités ECMAScript 2020
+    "emitDecoratorMetadata": true,        // Requis si vous utilisez des décorateurs (optionnel pour les Web Components)
+    "experimentalDecorators": true,       // Active l'utilisation des décorateurs (optionnel)
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "src/**/*.ts",                         // Inclut tous les fichiers TypeScript dans le dossier src
+    "globals.d.ts"
+  ],
+  "exclude": [
+    "node_modules",                       // Exclut les dépendances externes
+    "dist"                                // Exclut le dossier de sortie
+  ]
+}
